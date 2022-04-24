@@ -12,14 +12,14 @@ import {MatTooltipModule} from "@angular/material/tooltip";
 import {DialogActionsComponent} from "./components/editing/dialog-node/dialog-actions/dialog-actions.component";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
-import { DialogOptionNodeComponent } from './components/editing/dialog-option-node/dialog-option-node.component';
+import { ResponseNodeComponent } from './components/editing/response-node/response-node.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DialogNodeComponent,
     DialogActionsComponent,
-    DialogOptionNodeComponent
+    ResponseNodeComponent
   ],
   imports: [
     BrowserModule,

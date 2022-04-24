@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DialogOptionNodeComponent } from './dialog-option-node.component';
+import { ResponseNodeComponent } from './response-node.component';
 
 describe('DialogOptionNodeComponent', () => {
-  let component: DialogOptionNodeComponent;
-  let fixture: ComponentFixture<DialogOptionNodeComponent>;
+  let component: ResponseNodeComponent;
+  let fixture: ComponentFixture<ResponseNodeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DialogOptionNodeComponent ]
+      declarations: [ ResponseNodeComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DialogOptionNodeComponent);
+    fixture = TestBed.createComponent(ResponseNodeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
