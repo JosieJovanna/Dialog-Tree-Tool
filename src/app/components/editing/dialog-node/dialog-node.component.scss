@@ -1,0 +1,29 @@
+@import "src/assets/styles/variables";
+
+.node-container {
+  display: flex;
+  width: 40rem;
+  height: 20rem;
+  padding: .5rem;
+  background: darkseagreen;
+}
+
+.description {
+  font-style: italic;
+}
+
+.main-content {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  //background: peachpuff;
+}
+
+.mat-form-field-wrapper {
+  margin: 0;
+}
+
+textarea {
+  max-height: 11.75rem;
+}
+

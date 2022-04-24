@@ -1,0 +1,16 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "assets/styles/variables";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+button.mat-icon-button {
+  width: $icon-button-size;
+  height: $icon-button-size;
+
+  mat-icon {
+    font-size: $icon-size;
+    width: $icon-size;
+    color: indigo;
+  }
+}

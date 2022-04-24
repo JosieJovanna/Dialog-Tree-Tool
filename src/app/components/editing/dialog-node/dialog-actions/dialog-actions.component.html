@@ -1,0 +1,32 @@
+<div class="side-actions">
+  <div class="side-actions-top">
+    <!--SETTINGS-->
+    <button
+      mat-icon-button
+      matTooltip="Dialog Settings">
+      <mat-icon>
+        settings
+      </mat-icon>
+    </button>
+    <!--VIEW TEXT DETAILS-->
+    <button
+      mat-icon-button
+      matTooltip="View Text Formatting Details"
+      (click)="viewTextDetails = !viewTextDetails">
+      <mat-icon>
+        {{ !viewTextDetails ? 'visibility' : 'visibility_off' }}
+      </mat-icon>
+    </button>
+  </div>
+  <!--ADD DIALOG OPTION-->
+  <div
+    class="side-actions-bottom">
+    <button
+      mat-icon-button
+      matTooltip="Add Dialog Option">
+      <mat-icon>
+        add_circle_outline
+      </mat-icon>
+    </button>
+  </div>
+</div>

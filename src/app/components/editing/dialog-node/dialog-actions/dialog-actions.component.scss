@@ -1,0 +1,14 @@
+.side-actions {
+  display: flex;
+  height: 100%;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin-right: .5rem;
+
+  .side-actions-top {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+
+  }
+}
