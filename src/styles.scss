@@ -1,8 +1,10 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "assets/styles/variables";
 
-html, body { height: 100%; }
+html, body { height: 100%; color: $text-color }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/******** ICONS ********/
 
 button.mat-icon-button {
   width: $icon-button-size;
@@ -13,4 +15,37 @@ button.mat-icon-button {
     width: $icon-size;
     color: indigo;
   }
+}
+
+/******** SCROLL BARS ********/
+
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 1rem;
+  background-clip: padding-box;
+  border: 4px solid transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 0 10px;
+}
+
+.scroll-vertical {
+  overflow-y: scroll;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-fill-color: $text-color;
+  transition: color .5s ease !important;
+}
+
+.scroll-vertical:hover {
+  color: $text-color-transparent;
+}
+
+.scroll-horizontal {
+  overflow-x: scroll;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-fill-color: $text-color;
+  transition: color .5s ease !important;
 }
