@@ -19,17 +19,21 @@ button.mat-icon-button {
 
 /******** SCROLL BARS ********/
 
-*::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  border-radius: .5rem;
+  background-clip: padding-box;
+  border: 0px solid transparent;
+}
+
 *::-webkit-scrollbar-thumb {
   width: 12px;
   height: 12px;
   border-radius: 1rem;
   background-clip: padding-box;
   border: 4px solid transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-  box-shadow: inset 0 0 0 10px;
+  box-shadow: inset 0 0 0 4px;
 }
 
 .scroll-vertical {

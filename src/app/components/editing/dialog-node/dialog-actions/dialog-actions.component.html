@@ -8,10 +8,34 @@
         settings
       </mat-icon>
     </button>
-    <!--VIEW TEXT DETAILS-->
+    <!--DETAILS-->
     <button
       mat-icon-button
-      matTooltip="View Text Formatting Details"
+      matTooltip="Edit Dialog Details">
+      <mat-icon>
+        note_alt
+      </mat-icon>
+    </button>
+    <!--HISTORY-->
+    <button
+      mat-icon-button
+      matTooltip="View History">
+      <mat-icon>
+        history
+      </mat-icon>
+    </button>
+    <!--EDIT TEXT-->
+    <button
+      mat-icon-button
+      matTooltip="Edit Dialog Text">
+      <mat-icon>
+        edit
+      </mat-icon>
+    </button>
+    <!--VIEW FORMATTING-->
+    <button
+      mat-icon-button
+      matTooltip="View Text Formatting"
       (click)="viewTextDetails = !viewTextDetails">
       <mat-icon>
         {{ !viewTextDetails ? 'visibility' : 'visibility_off' }}
@@ -23,7 +47,7 @@
     class="side-actions-bottom">
     <button
       mat-icon-button
-      matTooltip="Add Dialog Option">
+      matTooltip="Add Link">
       <mat-icon>
         add_circle_outline
       </mat-icon>

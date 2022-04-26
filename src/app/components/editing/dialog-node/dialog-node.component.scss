@@ -1,34 +1,83 @@
 @import "src/assets/styles/variables";
 
+$icon-button-spacer: 0;
+
+$node-width: 18rem;
+$node-shortest: 18rem;
+$node-tallest: 48rem;
+$node-border: .5rem;
+$node-spacer: .5rem;
+
+$node-header-section-height: calc(3 * #{$icon-button-size});
+$node-actions-width: calc(#{$icon-button-size} + #{$node-spacer});
+
 .node-container {
-  display: flex;
-  width: 20rem;
-  height: 20rem;
-  padding: .5rem;
+  padding: $node-border;
   background: darkseagreen;
-}
-
-.description {
-  font-style: italic;
-}
-
-.main-content {
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  //background: peachpuff;
-}
 
-.mat-form-field-wrapper {
-  margin: 0;
-}
+  .node-content {
+    width: $node-width;
+    min-height: $node-shortest;
+    max-height: $node-tallest;
 
-textarea {
-  max-height: 11.75rem;
-}
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: $node-spacer;
 
-.text-card {
-  height: 13.75rem;
+    dtt-dialog-actions {
+      height: 100%;
+
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    .node-main-content {
+      width: calc(#{$node-width} - #{$node-actions-width});
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      //background: peachpuff;
+
+      .node-header-section {
+        height: $node-header-section-height;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+
+        .node-header {
+          height: $icon-button-size;
+
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+
+          h2 {
+            margin: 0;
+          }
+        }
+        .node-description {
+          height: calc(2 * #{$icon-button-size});
+
+          p {
+            font-style: italic;
+            line-height: normal;
+            word-wrap: break-word;
+          }
+        }
+      }
+      .node-body {
+        min-height: calc(#{$node-shortest} - #{$node-header-section-height});
+        max-height: calc(#{$node-tallest} - #{$node-header-section-height});
+        line-height: normal;
+
+        mat-card {
+          min-height: inherit;
+          max-height: inherit;
+          overflow-y: scroll;
+        }
+      }
+    }
+  }
 }
