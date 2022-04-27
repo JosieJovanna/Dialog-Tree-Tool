@@ -1,0 +1,33 @@
+<div class="side-actions">
+  <div class="side-actions-top">
+    <!--SETTINGS-->
+    <dtt-icon-button tooltip="Edit Dialog Settings">
+      settings
+    </dtt-icon-button>
+    <!--DETAILS-->
+    <dtt-icon-button tooltip="Edit Dialog Details">
+      note_alt
+    </dtt-icon-button>
+    <!--HISTORY-->
+    <dtt-icon-button tooltip="View Dialog History">
+      history
+    </dtt-icon-button>
+    <!--EDIT TEXT-->
+    <dtt-icon-button tooltip="Edit Dialog Text">
+      edit
+    </dtt-icon-button>
+    <!--VIEW FORMATTING-->
+    <dtt-icon-button
+      tooltip="{{ !viewTextDetails ? 'Hide' : 'Show' }} Text Formatting"
+      (clicked)="viewTextDetails = !viewTextDetails">
+      {{ !viewTextDetails ? 'visibility' : 'visibility_off' }}
+    </dtt-icon-button>
+  </div>
+  <!--ADD DIALOG OPTION-->
+  <div
+    class="side-actions-bottom">
+    <dtt-icon-button tooltip="Add Link">
+      add_circle_outline
+    </dtt-icon-button>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+@import "src/assets/styles/variables";
+
+button.mat-icon-button {
+  width: $icon-button-size;
+  height: $icon-button-size;
+
+  mat-icon {
+    font-size: $icon-size;
+    width: $icon-size;
+    color: $color-node-accent;
+  }
+}

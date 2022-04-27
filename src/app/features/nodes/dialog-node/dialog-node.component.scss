@@ -13,7 +13,7 @@ $node-actions-width: calc(#{$icon-button-size} + #{$node-spacer});
 
 .node-container {
   padding: $node-border;
-  background: darkseagreen;
+  background: $color-node-background;
   display: flex;
 
   .node-content {
@@ -36,10 +36,10 @@ $node-actions-width: calc(#{$icon-button-size} + #{$node-spacer});
       display: flex;
       flex-flow: column nowrap;
       justify-content: space-between;
-      //background: peachpuff;
 
       .node-header-section {
         height: $node-header-section-height;
+        color: $color-node-accent;
 
         display: flex;
         flex-flow: column nowrap;
@@ -76,6 +76,7 @@ $node-actions-width: calc(#{$icon-button-size} + #{$node-spacer});
           min-height: inherit;
           max-height: inherit;
           overflow-y: scroll;
+          background-color: $color-node-accent;
         }
       }
     }

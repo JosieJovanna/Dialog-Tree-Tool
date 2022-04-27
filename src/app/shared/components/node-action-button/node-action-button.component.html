@@ -1,0 +1,11 @@
+<button
+  mat-icon-button
+  (click)="onClick($event)"
+  [disabled]="!!disabled"
+  [matTooltip]="!tooltip ? '' : tooltip"
+  [matTooltipDisabled]="!!tooltipDisabled"
+  matTooltipPosition="before">
+  <mat-icon>
+    <ng-content></ng-content>
+  </mat-icon>
+</button>
